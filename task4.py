@@ -1,5 +1,5 @@
-def sort_list(list):
-    if len(list) == 0:
+def sort_list(list = None):
+    if len(list) == 0 or not list:
         return list
     min_elem = min(list)
     max_elem = max(list)

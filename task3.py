@@ -1,4 +1,6 @@
-def max_odd(list):
+def max_odd(list = None):
+    if not list:
+        return None
     res = float("-inf")
     for i in list:
         if((type(i) == float or type(i) == int) and i % 2 == 1 and i > res):
